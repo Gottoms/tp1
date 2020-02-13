@@ -47,3 +47,49 @@
     }
 
 }
+
+.fadeOut {
+
+	/*transition: filter 1s;
+	filter: brightness(0%);*/
+	animation: fadeout 0.2s;
+
+}
+
+.fadeIn {
+
+	animation: fadeout 0.2s;
+
+}
+
+@keyframes fadeout {
+
+	from {
+
+		filter: brightness(0%);
+
+	}
+
+	to {
+
+		filter: brightness(100%);
+
+	}
+
+}
+
+@keyframes fadein {
+
+	from {
+
+		filter: brightness(100%);
+
+	}
+
+	to {
+
+		filter: brightness(0%);
+
+	}
+
+}
