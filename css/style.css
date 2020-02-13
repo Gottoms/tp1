@@ -9,6 +9,7 @@
 # Layout
 # Typography
 # En-tête
+# Main
 # Carousel
 # Navigation
 # Pied-de-page
@@ -377,6 +378,16 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   font-family: "Landasans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header {
@@ -425,11 +436,11 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 1px;
+  margin-top: 400px;
 }
 
 main h1 {
   font-size: 2.5em;
-  margin-top: 200px;
 }
 
 /* ------------------------------------------------------------
@@ -450,49 +461,12 @@ header {
   position: absolute;
 }
 
-nav {
-  background-color: rgba(61, 61, 61, 0.8);
-  position: fixed;
-}
-
-nav ul li {
-  margin: 10px 0px 10px 0px;
-}
-
-nav ul li a {
-  padding: 14px 0px 14px 0px;
-  text-decoration: none;
-  color: #bdbdbd;
-  letter-spacing: 1px;
-  font-size: 1.4em;
-  -webkit-transition: color .2s;
-  transition: color .2s;
-}
-
-nav ul li a::after {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #919191;
-  content: ' ';
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-  margin-top: 3px;
-}
-
-nav ul li a:hover {
-  color: #919191;
-}
-
-nav ul li a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+/* ------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+main {
+  height: auto;
+  background-color: #464646;
 }
 
 /* ------------------------------------------------------------
@@ -613,6 +587,51 @@ nav ul li a:hover::after {
 /* ------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+nav {
+  background-color: rgba(61, 61, 61, 0.8);
+  position: fixed;
+}
+
+nav ul li {
+  margin: 10px 0px 10px 0px;
+}
+
+nav ul li a {
+  padding: 14px 0px 14px 0px;
+  text-decoration: none;
+  color: #bdbdbd;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+nav ul li a::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #919191;
+  content: ' ';
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  margin-top: 3px;
+}
+
+nav ul li a:hover {
+  color: #919191;
+}
+
+nav ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 /* ------------------------------------------------------------
 # Pied-de-page
 --------------------------------------------------------------*/

@@ -6,6 +6,9 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     font-family: "Landasans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -47,12 +50,11 @@ main {
     flex-direction: column;
     justify-content: center;
     letter-spacing: 1px;
-
+    margin-top: 400px;
    
     h1 {
 
         font-size: 2.5em;
-        margin-top: 200px;
 
     }
 
