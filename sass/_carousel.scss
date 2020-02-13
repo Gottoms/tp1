@@ -1,0 +1,49 @@
+.carousel_main {
+
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	max-width: 900px;
+
+}
+
+.mySlides {
+
+	display: none;
+	transition: display 0.5s;
+
+}
+
+.div_controls {
+
+	display: flex;
+	justify-content: space-between;
+	top: -30px;
+	position: relative;
+	width: 30%;
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+	border-radius: 10px;
+	padding: 5px;
+
+}
+
+.slider_btns {
+
+	cursor: pointer;
+	display: inline-block;
+	transition: opacity 0.2s;
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+    border-radius: 100px;
+    
+    &:hover {
+
+        opacity: 0.5;
+	    background-color: white;
+
+    }
+
+}

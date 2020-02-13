@@ -9,6 +9,7 @@
 # Layout
 # Typography
 # En-tête
+# Carousel
 # Navigation
 # Pied-de-page
 ----------------------------------------------------------------
@@ -485,6 +486,62 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+/* ------------------------------------------------------------
+# En-tête
+--------------------------------------------------------------*/
+.carousel_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+}
+
+.mySlides {
+  display: none;
+  -webkit-transition: display 0.5s;
+  transition: display 0.5s;
+}
+
+.div_controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: -30px;
+  position: relative;
+  width: 30%;
+  /*background-color: rgba(0, 0, 0, 0.4);*/
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.slider_btns {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.slider_btns:hover {
+  opacity: 0.5;
+  background-color: white;
 }
 
 /* ------------------------------------------------------------
